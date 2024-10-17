@@ -52,9 +52,23 @@ body{
     background-position: center;
     box-shadow: 0 0 4px white;
 }
+.gallery{
+    width: 100%;
+}
 .row-2{
     grid-row: span 2;
 }
 .col-2{
     grid-column: span 2;
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+    .box{
+        grid-row: span 2;
+        grid-column: span 3;
+    }
 }
